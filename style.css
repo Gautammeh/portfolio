@@ -26,6 +26,7 @@ header{
    align-items: center;
    justify-content: center;
    
+   
 }
 #nav h1{
    font-size: 30px;
@@ -264,8 +265,53 @@ em{
    color: rgb(76, 0, 255);
 }
 
+#dropdown{
+   display: none;
+}
 
+/* -------------- */
 @media (min-width: 451px) and (max-width: 850px) {
+
+
+   
+
+   #dropdown{
+      display: none;
+      position: absolute;
+      color: rgb(0, 0, 0);
+      width: 100%;
+      top: 50px;
+      background-color: aliceblue;
+      background-color: transparent;
+      backdrop-filter: blur(15px);
+      flex-direction: column;
+      width: 100%;
+      height: 30vh;
+      padding: 10px 0px;
+      transition: height 0.5s ease-in-out;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 300;
+    }
+
+    #dropdown .items{
+      /* background-color: rgb(255, 0, 0); */
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      gap: 15px;
+      height: 25vh;
+      width: 60%;
+      margin: 0 auto;
+      transition: all ease-in 3s;
+    }
+    #dropdown .items a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+
+    
 
    #nav i{
       color: white;
@@ -278,8 +324,9 @@ em{
   }
   #nav{
    width: 100%;
-   /* border: 1px solid red; */
    justify-content: space-between;
+   
+ 
   }
 
   #home{
@@ -401,6 +448,51 @@ border: 1px solid rgb(0, 17, 255);
 */
 
 @media (max-width: 450px) {
+
+
+   #dropdown{
+      display: none;
+      position: absolute;
+      color: rgb(0, 0, 0);
+      width: 100%;
+      top: 50px;
+      background-color: aliceblue;
+      background-color: transparent;
+      backdrop-filter: blur(15px);
+      flex-direction: column;
+      width: 100%;
+      height: 30vh;
+      padding: 10px 0px;
+      transition: height 0.5s ease-in-out;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 100;
+    }
+
+    #dropdown .items{
+      /* background-color: rgb(255, 0, 0); */
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      gap: 15px;
+      height: 25vh;
+      width: 60%;
+      margin: 0 auto;
+      transition: all ease-in 3s;
+    }
+    #dropdown .items a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+
+     header{
+      position: sticky;
+   top: 0;
+   background-color: black;
+   background-color: transparent;
+   backdrop-filter: blur(15px);
+   z-index: 200;}
 
    #nav i{
       color: white;
@@ -532,5 +624,6 @@ border: 1px solid rgb(0, 17, 255);
 
 }
    
+
 
 }
