@@ -273,52 +273,54 @@ em{
 @media (min-width: 451px) and (max-width: 850px) {
 
 
+   /* Hamburger Dropdown */
+#dropdown {
+   display: flex;
+   position: absolute;
+   top: 70px; /* Below nav */
+   left: 0;
+   width: 100%;
+   height: 0; /* Start closed */
+   overflow: hidden; /* Hide content initially */
+   background-color: aliceblue;
+   background-color: transparent;
+   backdrop-filter: blur(15px);
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: height 0.4s ease-in-out; /* Smooth animation */
+   z-index: 200; /* Avoid overlapping */
+ }
+
+ #dropdown.show {
+   height: 35vh; /* Open height */
+ }
+ 
+ #dropdown .items a {
+   color: white;
+   text-decoration: none;
+   font-size: 4vw;
+   margin: 10px 0;
+   transition: color 0.3s ease-in-out;
+ }
+ 
+ #dropdown .items a:hover {
+   color: rgb(103, 125, 255);
+ }
+ 
+ /* Hamburger Icon Styling */
+ #nav i {
+   display: block;
+   font-size: 6vw;
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ #nav i.rotate {
+   transform: rotate(90deg); /* Rotate on open */
+ }
+
    
-
-   #dropdown{
-      display: none;
-      position: absolute;
-      color: rgb(0, 0, 0);
-      width: 100%;
-      top: 50px;
-      background-color: aliceblue;
-      background-color: transparent;
-      backdrop-filter: blur(15px);
-      flex-direction: column;
-      width: 100%;
-      height: 30vh;
-      padding: 10px 0px;
-      transition: height 0.5s ease-in-out;
-      align-items: center;
-      justify-content: space-around;
-      z-index: 300;
-    }
-
-    #dropdown .items{
-      /* background-color: rgb(255, 0, 0); */
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      align-items: center;
-      gap: 15px;
-      height: 25vh;
-      width: 60%;
-      margin: 0 auto;
-      transition: all ease-in 3s;
-    }
-    #dropdown .items a{
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-    }
-
-    
-
-   #nav i{
-      color: white;
-      display: block;
-      font-size: 4vw;
-      
-    }
     #nav a{
       display: none;
   }
@@ -328,6 +330,18 @@ em{
    
  
   }
+
+  #dropdown .items{
+
+   display: flex;
+      flex-direction: column;
+      padding: 5px;
+      align-items: center;
+      gap: 2px;
+      /* height: 25vh; */
+      width: 60%;
+      margin: 0 auto;
+ }
 
   #home{
    /* border: 1px solid red; */
@@ -390,7 +404,7 @@ em{
 }
 
 #language{
-border: 1px solid rgb(0, 17, 255);
+/* border: 1px solid rgb(0, 17, 255); */
      padding: 10px;
      width: 100%;
      flex-wrap: wrap;
@@ -450,56 +464,66 @@ border: 1px solid rgb(0, 17, 255);
 @media (max-width: 450px) {
 
 
-   #dropdown{
-      display: none;
-      position: absolute;
-      color: rgb(0, 0, 0);
-      width: 100%;
-      top: 50px;
-      background-color: aliceblue;
-      background-color: transparent;
-      backdrop-filter: blur(15px);
-      flex-direction: column;
-      width: 100%;
-      height: 30vh;
-      padding: 10px 0px;
-      transition: height 0.5s ease-in-out;
-      align-items: center;
-      justify-content: space-around;
-      z-index: 100;
-    }
+   /* Hamburger Dropdown */
+#dropdown {
+   /* border: 1px solid red; */
+   display: flex;
+   position: absolute;
+   top: 70px; /* Below nav */
+   left: 0;
+   width: 100%;
+   height: 0; /* Start closed */
+   overflow: hidden; /* Hide content initially */
+   background-color: aliceblue;
+   background-color: transparent;
+   backdrop-filter: blur(5px);
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: height 0.4s ease-in-out; /* Smooth animation */
+   z-index: 200; /* Avoid overlapping */
+ }
+ #dropdown .items{
 
-    #dropdown .items{
-      /* background-color: rgb(255, 0, 0); */
-      display: flex;
+   display: flex;
       flex-direction: column;
       padding: 20px;
       align-items: center;
-      gap: 15px;
-      height: 25vh;
+      gap: 10px;
+      /* height: 25vh; */
       width: 60%;
       margin: 0 auto;
-      transition: all ease-in 3s;
-    }
-    #dropdown .items a{
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-    }
+ }
+ #dropdown.show {
+   height: 30vh; /* Open height */
+ }
+ 
+ #dropdown .items a {
+   color: white;
+   text-decoration: none;
+   font-size: 4vw;
+   margin: 10px 0;
+   transition: color 0.3s ease-in-out;
+ }
+ 
+ #dropdown .items a:hover {
+   color: rgb(103, 125, 255);
+ }
+ 
+ /* Hamburger Icon Styling */
+ #nav i {
+   display: block;
+   font-size: 6vw;
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ #nav i.rotate {
+   transform: rotate(90deg); /* Rotate on open */
+ }
 
-     header{
-      position: sticky;
-   top: 0;
-   background-color: black;
-   background-color: transparent;
-   backdrop-filter: blur(15px);
-   z-index: 200;}
 
-   #nav i{
-      color: white;
-      display: block;
-      font-size: 6vw;
-      
-    }
+
     #nav a{
       display: none;
   }

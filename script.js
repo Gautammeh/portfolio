@@ -92,30 +92,33 @@ tl.from("#projects div",{
 })
 
 
-const hamburger = document.getElementById("hamburger");
-const dropdown = document.getElementById("dropdown");
+const hamburger = document.getElementById('hamburger');
+const dropdown = document.getElementById('dropdown');
 
+// Hamburger click listener
+hamburger.addEventListener('click', () => {
+  const isOpen = dropdown.classList.contains('show');
 
+  // Toggle dropdown visibility
+  dropdown.classList.toggle('show', !isOpen);
 
-let val = 0
-hamburger.addEventListener("click",()=>{
+  // Toggle hamburger icon
+  if (isOpen) {
+    hamburger.classList.remove('ri-close-large-line');
+    hamburger.classList.add('ri-menu-line');
+  } else {
+    hamburger.classList.remove('ri-menu-line');
+    hamburger.classList.add('ri-close-large-line');
+  }
+});
 
-    if(val== 0){
+// Close dropdown when a nav-link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    dropdown.classList.remove('show'); // Close dropdown
 
-        
-    
-    dropdown.style.display = "block";
-    hamburger.removeAttribute;
-    hamburger.setAttribute("class","ri-close-large-line");
-    val = 1;
-
-
-    }
-    else{
-    dropdown.style.display = "none";
-    hamburger.removeAttribute;
-    hamburger.setAttribute("class","ri-menu-line");
-    val = 0;
-
-    }  
-})
+    // Reset hamburger to "menu" icon
+    hamburger.classList.remove('ri-close-large-line');
+    hamburger.classList.add('ri-menu-line');
+  });
+});
