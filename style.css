@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    width: 100%;
+
+}
+
+body{
+    background-color: black;
+    /* height: 300vh; */
+    color: white;
+    font-family: "Faculty Glyphic", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* scroll-behavior: smooth; */
+        
+}
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+#nav h1{
+   font-size: 30px;
+   color: rgb(103, 125, 255);
+   font-weight: 600;
+   font-family:serif;
+}
+#nav{
+   /* position: fixed; */
+   /* top: 0; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* z-index: 100; */
+}
+
+#nav a{
+    /* border: 1px solid red; */
+    color: white;
+    text-decoration: none;
+    font-size: 1.6vw;
+    font-family:serif;
+}
+ #nav a:hover{
+    color: rgb(103, 125, 255);
+    transition: all ease-in 0.3s;
+ }
+
+ #nav i{
+   color: white;
+   display: none;
+ }
+
+#home{
+      /* border: 1px solid red; */
+    /* background-color: azure; */
+    height: 78vh;
+    display: flex;
+    background-image: url("./HW.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#home .left{
+   /* background-color: black; */
+   /* border: 1px solid red; */
+   padding: 150px 50px;
+   font-size: 3.8vw;
+   font-family: "Turret Road", serif;
+   font-weight: 400;
+   font-style: normal;
+   align-items: center;
+}
+
+#home .left i{
+   color: red;
+}
+
+.left, .right{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.right{
+    background-image: url("./home1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+.headings-section{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    /* text-decoration: underline; */
+}
+ #about{
+      /* border: 1px solid red; */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 35px 150px;
+    gap: 0 20px;
+    overflow   : hidden;
+
+ }
+
+ .about-left, .about-right{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+ }
+
+ .about-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+ }
+em{
+    color: rgb(93, 122, 255);
+    font-weight: 800;
+}
+ .about-left h1{
+    font-size: 3.5vw;
+ }
+ .about-left h2{
+    font-size: 2.5vw;
+ }
+ .about-left p{
+    text-align: justify;
+    font-size: 1.4vw;
+
+ }
+ .about-left p::first-letter{
+    text-transform: uppercase;
+ }
+
+ .about-right{
+    background-image: url("./about\ \(2\).png");
+    background-size: cover;
+    background-position: 0 90%;
+    border-radius: 8px;
+    
+ }
+
+ #language{
+    /* background-color: antiquewhite; */
+      /* height: 200px; */
+      padding: 35px;
+      width: 65%;
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+ }
+
+ #language .lang-class{
+   background-color: white;
+   border: 1px solid rgb(255, 255, 255);
+   width: 100px;
+   height: 100px;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 12px;
+ }
+
+ #language .lang-class img{
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+ }
+
+ #projects{
+   /* border: 1px solid red; */
+   /* height: 300px; */
+   padding: 35px;
+   width: 65%;
+   margin: 10px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #projects div{
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;
+   background-color: white;
+   color: black;
+   padding: 15px;
+   border-radius: 9px;
+   cursor: pointer;
+ }
+
+ #projects div a img{
+  width: 150px;
+  animation: rotate 2s linear 1s infinite;
+  filter: invert(1);
+ }
+
+ @keyframes rotate{
+   0%{
+     transform: rotate(0deg);
+   }
+   100%{
+     transform: rotate(180deg);
+   }
+}
+
+#footer{
+   background-color: rgb(255, 255, 255);
+   /* height: 100px; */
+   color: black;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+#footer div a{
+   text-decoration: none;
+   color: black;
+
+}
+
+#footer div a #link{
+   color: rgb(0, 68, 255);
+   font-size: 3vw
+
+}
+#footer div a #git{
+   color: rgb(0, 0, 0);
+   font-size: 3vw
+
+}
+#footer div a #gmail{
+   color: rgb(0, 0, 0);
+   font-size: 2.9vw
+
+}
+
+
+#footer h3{
+   color: rgb(76, 0, 255);
+}
+
+
+@media (min-width: 451px) and (max-width: 850px) {
+
+   #nav i{
+      color: white;
+      display: block;
+      font-size: 4vw;
+      
+    }
+    #nav a{
+      display: none;
+  }
+  #nav{
+   width: 100%;
+   /* border: 1px solid red; */
+   justify-content: space-between;
+  }
+
+  #home{
+   /* border: 1px solid red; */
+ /* background-color: azure; */
+ height: 80vh;
+ display: flex;
+ flex-direction: column;
+ /* border: 1px solid red; */
+
+}
+
+
+#home .left{
+   height: 20%;
+   /* border: 1px solid rgb(204, 0, 255); */
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#home .right{
+   height: 80%;
+   /* border: 1px solid rgb(0, 17, 255); */
+   background-position: center;
+   
+}
+#about{
+/* border: 1px solid red; */
+ height: 70vh;
+ flex-direction: column-reverse;
+ padding: 40px 40px;
+ gap: 5px 0;
+
+}
+
+.about-left, .about-right{
+ width: 100%;
+/* border: 1px solid rgb(0, 17, 255); */
+}
+
+.about-left{
+
+ gap: 10px;
+ padding: 5px;
+}
+
+.about-left h1{
+ font-size: 5vw;
+}
+.about-left h2{
+ font-size: 3.5vw;
+}
+.about-left p{
+ font-size: 2.4vw;
+
+}
+.about-right{
+ background-position: center;
+}
+
+#language{
+border: 1px solid rgb(0, 17, 255);
+     padding: 10px;
+     width: 100%;
+     flex-wrap: wrap;
+}
+
+#language .lang-class{
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+}
+
+
+#projects{
+   text-align: center;
+ }
+
+ #footer{
+   background-color: rgb(255, 255, 255);
+   /* height: 100px; */
+   color: black;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+#footer div a{
+   text-decoration: none;
+   color: black;
+
+}
+#footer h1{
+   font-size: 4vw;
+}
+#footer div a #link{
+   font-size: 6vw
+
+}
+#footer div a #git{
+   font-size: 6vw
+
+}
+#footer div a #gmail{
+   font-size: 6vw
+
+}
+   
+
+}
+
+
+/* --------------
+
+*/
+
+@media (max-width: 450px) {
+
+   #nav i{
+      color: white;
+      display: block;
+      font-size: 6vw;
+      
+    }
+    #nav a{
+      display: none;
+  }
+  #nav{
+   width: 100%;
+   /* border: 1px solid red; */
+   justify-content: space-between;
+  }
+
+  #home{
+   /* border: 1px solid red; */
+ /* background-color: azure; */
+ height: 70vh;
+ display: flex;
+ flex-direction: column;
+ /* border: 1px solid red; */
+
+}
+
+
+#home .left{
+   height: 20%;
+   /* border: 1px solid rgb(204, 0, 255); */
+   padding: 15px;
+   display: flex;
+   font-size: 4.5vw;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#home .right{
+   height: 80%;
+   /* border: 1px solid rgb(0, 17, 255); */
+   background-position: center;
+   
+}
+#about{
+/* border: 1px solid red; */
+ height: 70vh;
+ flex-direction: column-reverse;
+ padding: 40px 40px;
+ gap: 5px 0;
+
+}
+
+.about-left, .about-right{
+ width: 100%;
+/* border: 1px solid rgb(0, 17, 255); */
+}
+
+.about-left{
+
+ gap: 10px;
+ padding: 5px;
+}
+
+.about-left h1{
+ font-size: 5.5vw;
+}
+.about-left h2{
+ font-size: 4vw;
+}
+.about-left p{
+ font-size: 2.9vw;
+
+}
+.about-right{
+ background-position: center;
+}
+
+#language{
+border: 1px solid rgb(0, 17, 255);
+     padding: 10px;
+     width: 100%;
+     flex-wrap: wrap;
+}
+
+#language .lang-class{
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+}
+
+
+#projects{
+   text-align: center;
+   font-size: 3.5vw;
+ }
+
+ #footer{
+   background-color: rgb(255, 255, 255);
+   /* height: 100px; */
+   color: black;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+#footer div a{
+   text-decoration: none;
+   color: black;
+
+}
+#footer h1{
+   font-size: 5vw;
+}
+#footer h3{
+   font-size: 5vw;
+}
+#footer div a #link{
+   font-size: 8vw
+
+}
+#footer div a #git{
+   font-size: 8vw
+
+}
+#footer div a #gmail{
+   font-size: 8vw
+
+}
+   
+
+}
