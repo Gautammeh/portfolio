@@ -6,6 +6,10 @@
 <title>Gautam Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -13,12 +17,11 @@
 </head>
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+
 
 <!-- NAV -->
 <nav>
-  <a href="#home" class="nav-logo">GM<span>.</span></a>
+  <a href="#home" class="nav-logo unique">GM<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -54,7 +57,7 @@
       <div class="hero-dot"></div>
       Available for work
     </div>
-    <h1 class="hero-name">
+    <h1 class="hero-name unique">
       Frontend<br>
       <span class="grad">Developer</span>
     </h1>
@@ -80,6 +83,7 @@
     <div class="marquee-item"><span class="marquee-dot"></span>CSS3</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Tailwind CSS</div>
     <div class="marquee-item"><span class="marquee-dot"></span>JavaScript</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>React</div>
     <div class="marquee-item"><span class="marquee-dot"></span>GSAP</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Responsive Design</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Animations</div>
@@ -89,6 +93,7 @@
     <div class="marquee-item"><span class="marquee-dot"></span>CSS3</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Tailwind CSS</div>
     <div class="marquee-item"><span class="marquee-dot"></span>JavaScript</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>React</div>
     <div class="marquee-item"><span class="marquee-dot"></span>GSAP</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Responsive Design</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Animations</div>
@@ -101,7 +106,7 @@
   <div class="about-wrap reveal">
     <div class="about-photo-wrap">
       <div class="photo-placeholder">
-        <div class="photo-avatar">A</div>
+       <img class="myProfile" src="./myProfile.png" alt="profile photo">
         <div class="photo-name-tag">
           <p>Gautam Mehta</p>
           <p>Frontend Developer</p>
@@ -126,7 +131,7 @@
    
       <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
         <a href="mailto:gautammehtayt@gmail.com" class="btn-primary">Hire Me ✉</a>
-        <a href="./resume.pdf" class="btn-ghost" download>Download CV ↓</a>
+        <a href="./Gautam Mehta.pdf" class="btn-ghost" download>Download CV ↓</a>
       </div>
     </div>
   </div>
@@ -140,7 +145,7 @@
   </div>
   <div class="skills-grid">
     <div class="skill-card reveal" style="transition-delay:0.05s">
-      <span class="skill-icon">🌐</span>
+      <span class="skill-icon"><img class="techLogo " src="./html.webp" alt="html logo"></span>
       <div class="skill-name">HTML5</div>
       <div class="skill-desc">Semantic markup, accessibility, SEO-friendly structure</div>
       <div class="skill-bar-wrap">
@@ -149,7 +154,7 @@
       </div>
     </div>
     <div class="skill-card reveal" style="transition-delay:0.1s">
-      <span class="skill-icon">🎨</span>
+      <span class="skill-icon"><img class="techLogo " src="./css.webp" alt="css logo"></span>
       <div class="skill-name">CSS3</div>
       <div class="skill-desc">Flexbox, Grid, animations, custom properties & more</div>
       <div class="skill-bar-wrap">
@@ -158,7 +163,7 @@
       </div>
     </div>
     <div class="skill-card reveal" style="transition-delay:0.15s">
-      <span class="skill-icon">💨</span>
+      <span class="skill-icon"><img class="techLogo" src="./tailwindcss.webp" alt="tailwind logo"></span>
       <div class="skill-name">Tailwind CSS</div>
       <div class="skill-desc">Utility-first styling, rapid UI development, custom themes</div>
       <div class="skill-bar-wrap">
@@ -167,21 +172,36 @@
       </div>
     </div>
     <div class="skill-card reveal" style="transition-delay:0.2s">
-      <span class="skill-icon">⚡</span>
+      <span class="skill-icon"><img class="techLogo" src="./js.webp" alt="javascript logo"></span>
       <div class="skill-name">JavaScript</div>
       <div class="skill-desc">ES6+, DOM manipulation, APIs, async/await patterns</div>
       <div class="skill-bar-wrap">
-        <div class="skill-bar-label"><span>Proficiency</span><span>75%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill" style="--pct:75%"></div></div>
+        <div class="skill-bar-label"><span>Proficiency</span><span>60%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="--pct:60%"></div></div>
       </div>
     </div>
+
+    <!-- React add-->
+    <div class="skill-card reveal" style="transition-delay:0.2s">
+      <span class="skill-icon"><img class="techLogo" src="./react.webp" alt="react logo"></span>
+      <div class="skill-name">React</div>
+      <div class="skill-desc">Component-based architecture, reusable UI development</div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Proficiency</span><span>60%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="--pct:60%"></div></div>
+      </div>
+    </div>
+
+
+
+
     <div class="skill-card reveal" style="transition-delay:0.25s">
-      <span class="skill-icon">✨</span>
+      <span class="skill-icon"><img class="techLogo white" src="./gsap.png" alt="gsap animation logo"></span>
       <div class="skill-name">GSAP</div>
       <div class="skill-desc">Timeline animations, ScrollTrigger, smooth interactions</div>
       <div class="skill-bar-wrap">
-        <div class="skill-bar-label"><span>Proficiency</span><span>80%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill" style="--pct:80%"></div></div>
+        <div class="skill-bar-label"><span>Proficiency</span><span>50%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="--pct:50%"></div></div>
       </div>
     </div>
   </div>
@@ -195,9 +215,66 @@
     <p style="color:var(--text2);margin-top:1rem;font-size:0.92rem;font-weight:300">Click on any project to view it live ↗</p>
   </div>
   <div class="projects-grid">
+    <!-- Smarthire -->
+    <a href="https://smarthire-dashboard.netlify.app/" target="_blank" rel="noopener" class="project-card reveal" style="transition-delay:0.05s">
+      <div class="project-thumb">
+        <div class="project-thumb-placeholder p4-bg"><i class="ri-phone-find-fill"></i></div>
+        <span class="project-badge">Smarthire</span>
+        <div class="project-arrow">↗</div>
+      </div>
+      <div class="project-info">
+        <div class="project-title">SmartHire — Job Application Tracker</div>
+        <div class="project-desc">
+          A modern job application tracking dashboard to manage applications, track status, and visualize insights. Built with React, Supabase, and Framer Motion.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Tailwind</span>
+          <span class="project-tag">Frame Motion</span>
+          <span class="project-tag">Recharts</span>
+          <span class="project-tag">Supabase</span>
+        </div>
+      </div>
+    </a>
+
+
+    <!-- githubuser finder-->
+
+    <a href="https://github-profiles-explorer.netlify.app/" target="_blank" rel="noopener" class="project-card reveal" style="transition-delay:0.05s">
+      <div class="project-thumb">
+        <div class="project-thumb-placeholder p3-bg"><i class="ri-github-fill"></i></div>
+        <span class="project-badge">GITHUB USER FINDER</span>
+        <div class="project-arrow">↗</div>
+      </div>
+      <div class="project-info">
+        <div class="project-title">GITHUB USER FINDER</div>
+        <div class="project-desc">
+          GitHub profile finder built with React, featuring real-time user data and top repository insights.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Tailwind</span>
+          <span class="project-tag">Github Api</span>
+        </div>
+      </div>
+    </a>
+
+
+
+
+
+
+
+
     <a href="https://weatherappbygautam.netlify.app/" target="_blank" rel="noopener" class="project-card reveal" style="transition-delay:0.05s">
       <div class="project-thumb">
-        <div class="project-thumb-placeholder p1-bg">🌦️</div>
+        <div class="project-thumb-placeholder p1-bg"><i class="ri-sun-cloudy-line"></i></div>
         <span class="project-badge">Weather App</span>
         <div class="project-arrow">↗</div>
       </div>
@@ -217,7 +294,7 @@
     
     <a href="https://onesteptoday.netlify.app/" target="_blank" rel="noopener" class="project-card reveal" style="transition-delay:0.1s">
       <div class="project-thumb">
-        <div class="project-thumb-placeholder p2-bg">✅</div>
+        <div class="project-thumb-placeholder p2-bg"><i class="ri-task-line"></i></div>
         <span class="project-badge">Productivity</span>
         <div class="project-arrow">↗</div>
       </div>
@@ -241,7 +318,7 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="#home" class="nav-logo">GM<span>.</span></a>
+      <a href="#home" class="nav-logo unique">GM<span>.</span></a>
       <p class="footer-tagline">Building beautiful web experiences, one pixel at a time.</p>
       <div class="footer-social">
         <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
@@ -279,7 +356,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">© 2025 <span>GM.</span> — Crafted with ❤️ and lots of coffee</p>
+    <p class="footer-copy">© 2025 <span>GM.</span> </p>
     <p class="footer-copy">Made with HTML · CSS · JS · GSAP</p>
   </div>
 </footer>

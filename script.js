@@ -36,7 +36,7 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 reveals.forEach(r => observer.observe(r));
 
-// animate skill bars that are inside already-visible skill cards on load
+
 setTimeout(() => {
   document.querySelectorAll('.skill-card.visible .skill-bar-fill').forEach(b => b.classList.add('animated'));
 }, 100);
@@ -48,3 +48,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
   });
 });
+
+
+
