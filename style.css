@@ -984,6 +984,9 @@ section {
 .p4-bg {
   background: linear-gradient(135deg, #0d1c2a, #4ae4ff);
 }
+.p5-bg {
+  background: linear-gradient(135deg, #0d1c2a, #fffc4a);
+}
 
 .project-badge {
   position: absolute;
